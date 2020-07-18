@@ -10,10 +10,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/southwind9801/myspringclouddemo.git
+          uri: https://github.com/Gpicachu/GSpringCloud.git
           searchPaths: config
-          username: root
-          password: root
+          username: Gpicachu
+          password: guaqing0423
       label: master
   rabbitmq:
     host: localhost
@@ -29,3 +29,12 @@ management:
     web:
       exposure:
         include: bus-refresh
+
+#       uri: https://github.com/Gpicachu/GSpringCloud.git
+#          searchPaths: config
+#          username: Gpicachu
+#          password: guaqing.0423
+##      uri: https://github.com/southwind9801/myspringclouddemo.git
+#          searchPaths: config
+#          username: root
+#          password: root
