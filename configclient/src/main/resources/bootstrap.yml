@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      name: configclient
+      label: master
+      discovery:
+        enabled: true
+        service-id: configserver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+## 文件名叫 configclient-dev   所以 application.name = configclien; profiles.active = dev
+## cloud.config.uri：本地Config Server 的访问路径
+## cloud.config.fail-fase：设置客户端优先判断Config Server获取是否正常
+## 通过spring.application.name结合spring.profiles.active拼接获得目标配置文件名称configclient-dev.yml，去Config Server中查找该文件。
+## uri: http://localhost:8762 fail-fast: true

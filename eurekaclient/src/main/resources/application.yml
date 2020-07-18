@@ -1,0 +1,15 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+##  spring.application.name 当前服务注册在 Eureka Service 上的名字
+##  euerka.client.service-url.defaultZone  注册中心的访问地址
+##  eureka.instance.prefer-ip-address 是否将当前的服务的IP 注册到Eureka Service
